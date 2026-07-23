@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "lint": "eslint . --ext .js",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "start": "node index.js"

@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello World!' });
+  res.json({ message: 'Bye World!' });
 });
 
 app.get('/api/users', (req, res) => {
@@ -18,5 +18,10 @@ if (require.main === module) {
     console.log(`Server running at http://localhost:${port}`);
   });
 }
+
+// New endpoint for the CI pipeline demo
+app.get('/api/status', (req, res) => {
+  res.json({ status: 'OK', message: 'CI/CD Pipeline is working!' });
+});
 
 module.exports = app;
