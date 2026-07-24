@@ -5,7 +5,7 @@ describe('API Tests', () => {
   test('GET / should return hello message', async () => {
     const response = await request(app).get('/');
     expect(response.statusCode).toBe(200);
-     // Change this to make it fail:
+    // This should FAIL pag hinde meron nanamang tao mawawala sa mundo today
     expect(response.body).toHaveProperty('message', 'Wrong Message!');
   });
 
