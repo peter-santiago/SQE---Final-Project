@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+// Add to break lint
+const unusedVariable = "This will cause a lint error";
+
 app.get('/', (req, res) => {
   res.json({ message: 'Hello World!' });
 });
