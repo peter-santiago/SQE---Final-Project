@@ -5,7 +5,8 @@ describe('API Tests', () => {
   test('GET / should return hello message', async () => {
     const response = await request(app).get('/');
     expect(response.statusCode).toBe(200);
-    expect(response.body).toHaveProperty('message', 'Hello World!');
+     // Change this to make it fail:
+    expect(response.body).toHaveProperty('message', 'Wrong Message!');
   });
 
   test('GET /api/users should return users array', async () => {
