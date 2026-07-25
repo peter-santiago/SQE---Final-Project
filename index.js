@@ -7,7 +7,7 @@ let config = {};
 try {
   config = require('./config.js');
   console.log(`Running in ${config.environment || 'default'} mode`);
-} catch (e) {
+} catch {
   console.log('Running in default mode (no config found)');
 }
 
